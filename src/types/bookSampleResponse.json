@@ -1,0 +1,93 @@
+{
+  "responseType": "CUSTOM_PAYLOAD",
+  "payload": {
+    "richContent": [
+      [
+        {
+          "title": "Fiction Bestsellers",
+          "subtitle": "Top fiction books this month",
+          "anchor": {
+            "href": "https://example.com/fiction-bestsellers",
+            "target": "_blank"
+          },
+          "type": "info",
+          "actionLink": "https://example.com/fiction-bestsellers"
+        },
+        {
+          "title": "The Midnight Library",
+          "subtitle": "Matt Haig",
+          "text": [
+            "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived."
+          ],
+          "image": {
+            "src": {
+              "rawUrl": "https://example.com/book-covers/midnight-library.jpg"
+            }
+          },
+          "anchor": {
+            "href": "https://example.com/books/midnight-library",
+            "target": "_blank"
+          },
+          "type": "info",
+          "actionLink": "https://example.com/books/midnight-library"
+        },
+        {
+          "title": "Project Hail Mary",
+          "subtitle": "Andy Weir",
+          "text": [
+            "A lone astronaut must save the earth from disaster in this incredible new science-based thriller from the #1 New York Times bestselling author of The Martian."
+          ],
+          "image": {
+            "src": {
+              "rawUrl": "https://example.com/book-covers/project-hail-mary.jpg"
+            }
+          },
+          "anchor": {
+            "href": "https://example.com/books/project-hail-mary",
+            "target": "_blank"
+          },
+          "type": "info",
+          "actionLink": "https://example.com/books/project-hail-mary"
+        }
+      ]
+    ],
+    "llmGeneratedContent": {
+      "content": {
+        "payload": "Based on recent reader preferences, these fiction bestsellers have been particularly popular this month. You might enjoy 'The Midnight Library' by Matt Haig if you're interested in thoughtful fiction about life choices, or 'Project Hail Mary' by Andy Weir if you prefer science fiction with problem-solving elements."
+      },
+      "debug": {
+        "flow": [
+          {
+            "name": "Call Search",
+            "status": {
+              "code": "OK"
+            },
+            "searchResults": [
+              {
+                "text": "Book recommendation search result with 3 bestselling titles in fiction",
+                "url": "https://example.com/book-recommendations/fiction",
+                "document": "projects/123456789/locations/global/collections/default_collection/dataStores/book-buddy-store/branches/0/documents/fiction-bestsellers",
+                "debugId": "fiction-bestsellers-001"
+              },
+              {
+                "text": "Information about 'The Midnight Library' by Matt Haig",
+                "url": "https://example.com/books/midnight-library",
+                "document": "projects/123456789/locations/global/collections/default_collection/dataStores/book-buddy-store/branches/0/documents/midnight-library",
+                "debugId": "book-midnight-library-001"
+              },
+              {
+                "text": "Information about 'Project Hail Mary' by Andy Weir",
+                "url": "https://example.com/books/project-hail-mary",
+                "document": "projects/123456789/locations/global/collections/default_collection/dataStores/book-buddy-store/branches/0/documents/project-hail-mary",
+                "debugId": "book-project-hail-mary-001"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "Session Id": "book-buddy-session-12345",
+    "Triggered Transition Names": ["fiction-bestsellers-transition"]
+  },
+  "match": {}
+} 
