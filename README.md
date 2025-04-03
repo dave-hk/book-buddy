@@ -1,6 +1,6 @@
 # Book Buddy
 
-## 1. Introduction
+## Introduction
 
 Book Buddy is a web app that demonstrates the capabilities of
 [Vertex AI Agent Builder](https://cloud.google.com/products/agent-builder)
