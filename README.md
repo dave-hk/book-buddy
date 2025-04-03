@@ -37,7 +37,7 @@ For detailed information about how to set up the agent, please refer to this Med
 
 In your browser, navigate to the following URL to access the web app:
 
-[Book Buddy](https://book-buddy-web.vercel.app)
+[Book Buddy](https://book-buddy-pi.vercel.app)
 
 ## Additional resources
 
