@@ -5,11 +5,27 @@
     <!-- <link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" /> -->
     <title>Book Buddy | Find your next favorite book</title>
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Your AI-powered book recommendation companion" />
     <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
     %sveltekit.head%
   </head>
-  <style></style>
+  <style>
+    /* Add smooth page load transition */
+    body {
+      opacity: 0;
+      transition: opacity 0.3s ease-in;
+    }
+    body.loaded {
+      opacity: 1;
+    }
+  </style>
   <body data-sveltekit-preload-data="hover" class="bg-gray-100">
     <div id="content" style="display: contents">%sveltekit.body%</div>
+    <script>
+      // Add loaded class after content is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
   </body>
 </html>
