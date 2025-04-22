@@ -11,7 +11,8 @@
     "lint": "prettier --plugin-search-dir . --check .",
     "format": "prettier --plugin-search-dir . --write .",
     "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
-    "test:ci": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js --ci --passWithNoTests",
+    "test:ci": "node ci-test.js",
+    "test:full": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" node --input-type=module --eval \"import{run}from'jest';run(process.argv);\" -- --ci --passWithNoTests",
     "test:watch": "jest --watch"
   },
   "devDependencies": {

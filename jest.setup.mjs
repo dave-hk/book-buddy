@@ -6,4 +6,6 @@ global.process.env = {
   ...process.env,
   // Add any environment variables needed for tests
   NODE_ENV: 'test',
-}; 
+};
+
+// Add any global test setup code here 
