@@ -10,7 +10,9 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --plugin-search-dir . --check .",
     "format": "prettier --plugin-search-dir . --write .",
-    "test": "echo 'Basic test passed' && exit 0"
+    "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
+    "test:ci": "jest --ci --passWithNoTests",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^2.0.0",
@@ -23,6 +25,7 @@
     "@types/uuid": "^9.0.8",
     "autoprefixer": "^10.4.14",
     "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
     "jsdom": "^26.1.0",
     "postcss": "^8.4.31",
     "postcss-load-config": "^4.0.1",
