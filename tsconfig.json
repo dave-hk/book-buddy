@@ -9,6 +9,10 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    
+    // Override deprecated options from extended config
+    "importsNotUsedAsValues": "remove",
+    "preserveValueImports": false
   }
 }

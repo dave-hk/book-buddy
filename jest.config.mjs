@@ -1,13 +1,16 @@
 // ESM-compatible Jest config file
 export default {
   transform: {
-    '^.+\\.ts$': 'ts-jest',
+    '^.+\\.ts$': ['ts-jest', {
+      tsconfig: 'tsconfig.custom.json',
+      useESM: true
+    }],
     '^.+\\.svelte$': ['svelte-jester', { preprocess: true }]
   },
   extensionsToTreatAsEsm: ['.ts', '.svelte'],
   moduleFileExtensions: ['js', 'ts', 'svelte'],
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['./jest.setup.js'],
+  setupFilesAfterEnv: ['./jest.setup.mjs'],
   testPathIgnorePatterns: ['/node_modules/', '/build/', '/.svelte-kit/'],
   collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{ts,svelte}'],
