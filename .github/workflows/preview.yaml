@@ -14,6 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install Dependencies
+        run: yarn install
+      
+      - name: Run Tests
+        run: yarn test
+        
       - name: Install Vercel CLI
         run: npm install --global vercel@latest
         
