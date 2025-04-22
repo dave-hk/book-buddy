@@ -11,7 +11,7 @@
     "lint": "prettier --plugin-search-dir . --check .",
     "format": "prettier --plugin-search-dir . --write .",
     "test": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js",
-    "test:ci": "jest --ci --passWithNoTests",
+    "test:ci": "node --experimental-vm-modules --no-warnings node_modules/jest/bin/jest.js --ci --passWithNoTests",
     "test:watch": "jest --watch"
   },
   "devDependencies": {
