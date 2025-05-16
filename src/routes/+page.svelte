@@ -59,13 +59,13 @@
 
 <TopNav />
 
-<div class="container mx-auto flex flex-col items-center px-4 md:px-0">
+<div class="container mx-auto flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12">
   <div class="max-h-full w-full">
     <Heading
       tag="h1"
       class="mb-2 mt-[5vh] text-center text-3xl font-bold leading-snug md:text-4xl lg:text-5xl"
       >Discover Your Next Book, Instantly.</Heading>
-    <div class="mt-[2vh] flex min-h-[55vh] flex-col gap-16 md:mt-[8vh] md:flex-row">
+    <div class="mt-[2vh] flex min-h-[55vh] flex-col gap-10 md:mt-[8vh] md:flex-row md:gap-16">
       <div class="w-full md:w-2/5">
         <p class="mt-5 text-center font-normal text-gray-500 dark:text-gray-400 md:text-start">
           Where AI Meets Your Next Read.
