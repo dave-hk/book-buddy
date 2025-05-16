@@ -100,13 +100,13 @@
   });
 </script>
 
-<div class="h-[50vh] md:h-full">
+<div class="h-[50vh] w-full sm:h-[55vh] md:h-full">
   <df-messenger
     project-id={import.meta.env.VITE_PROJECT_ID}
     agent-id={import.meta.env.VITE_AGENT_ID}
     language-code="zh-tw"
     storage-option="none"
-    class="drop-shadow-lg"
+    class="drop-shadow-lg w-full"
     max-query-length="-1"
     expand="true"
     >
